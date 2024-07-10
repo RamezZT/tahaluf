@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <style>
+      * {
+        color: black;
+      }
+      .container {
+        max-width: 1280px;
+        width: 100%;
+        color: white; /* Add this to make text visible on black background */
+        margin: 0 auto; /* Center the container */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .headerLeft {
+        display: flex;
+        width: 400px;
+        gap: 10px;
+      }
+      .headerButton {
+        padding: 20px;
+        text-align: center;
+        border: solid 2px;
+        border-radius: 10px;
+        background-color: white;
+      }
+      .headerLink {
+        padding: 0px 20px 2px 20px;
+        text-align: center;
+        border: solid 2px;
+        border-radius: 10px;
+        display: flex;
+        color: rgb(91, 91, 211);
+        border-color: black;
+        align-items: center;
+      }
+      .footerLink {
+        text-align: center;
+        display: flex;
+        color: rgb(91, 91, 211);
+        border-color: black;
+        align-items: center;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        /* margin-bottom: 60px; */
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-bottom: 40px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 64px;
+      }
+      .section {
+        /* background-color: black; */
+        /* min-height: 600px; */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        gap: 40px;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 600px;
+      }
+      .img {
+        width: 200px;
+        height: 100px;
+        background-color: rgb(86, 86, 86);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="headerLeft">
+          <button class="headerButton">Logo</button>
+          <button class="headerButton">Company Name</button>
+        </div>
+        <div class="headerLeft">
+          <a href="home" class="headerLink">Home</a>
+          <a href="home" class="headerLink">Products</a>
+          <a href="home" class="headerLink">Company</a>
+          <a href="home" class="headerLink">More</a>
+        </div>
+        <div class="headerButton">searchbar</div>
+      </header>
+      <h1>HeadLine</h1>
+      <div class="section">
+        <div class="box">
+          <div
+            class="box"
+            style="background-color: rgb(212, 212, 212); padding: 80px 40px"
+          >
+            <div class="img"></div>
+            <h3>Subhead 1</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+              ab deserunt labore laboriosam. Unde voluptatem dolor numquam nihil
+              quasi sunt magni, nostrum necessitatibus eos similique hic
+              doloribus veniam iste porro!
+            </p>
+            <button class="headerButton" style="width: 120px; padding: 10px">
+              Button
+            </button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quo
+            nam in ea ipsa aspernatur amet temporibus asperiores velit totam,
+            saepe qui sapiente, excepturi perferendis numquam! Vero repellat
+            quidem odio!
+          </p>
+        </div>
+        <div class="box">
+          <div
+            class="box"
+            style="background-color: rgb(212, 212, 212); padding: 80px 40px"
+          >
+            <div class="img"></div>
+            <h3>Subhead 1</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+              ab deserunt labore laboriosam. Unde voluptatem dolor numquam nihil
+              quasi sunt magni, nostrum necessitatibus eos similique hic
+              doloribus veniam iste porro!
+            </p>
+            <button class="headerButton" style="width: 120px; padding: 10px">
+              Button
+            </button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo esse
+            magnam ipsum aperiam animi deserunt, ullam pariatur, error ducimus
+            quasi maiores reiciendis voluptatum ipsa? Suscipit dolores rerum
+            dolorum magni excepturi.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="home" class="footerLink">Home</a>
+      <a href="home" class="footerLink">Products</a>
+      <a href="home" class="footerLink">Company</a>
+      <a href="home" class="footerLink">More</a>
+    </footer>
+  </body>
+</html>
