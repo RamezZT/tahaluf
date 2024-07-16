@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tahulf Form</title>
+    <style>
+      body {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .outer {
+        margin: auto;
+        height: 400px;
+        width: 450px;
+        border-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        position: relative;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        color: #004d40;
+        margin-bottom: 25px;
+        font-size: 24px;
+      }
+      p {
+        margin-left: 10px;
+        color: #00796b;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .in {
+        display: block;
+        width: calc(100% - 40px);
+        margin: 10px auto;
+        padding: 12px;
+        border: 1px solid #b2dfdb;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+      }
+      .in:focus {
+        border-color: #004d40;
+        outline: none;
+      }
+      #bt {
+        margin-top: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        background-color: #3c4544;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      #bt:hover {
+        background-color: #00796b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <h1>Tahaluf Form</h1>
+      <p>Enter trainee ID</p>
+      <input class="in" type="text" placeholder="Enter ID" id="a" />
+      <p>Enter trainee Password</p>
+      <input class="in" type="password" placeholder="Enter Password" id="b" />
+      <br />
+      <input
+        type="submit"
+        value="Submit"
+        onmouseenter="fa()"
+        onclick="alert('Form submitted')"
+        id="bt"
+      />
+    </div>
+  </body>
+</html>
